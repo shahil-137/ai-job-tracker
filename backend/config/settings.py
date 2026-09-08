@@ -30,10 +30,11 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["ai-job-tracker-4-ilsp.onrender.com",
+ALLOWED_HOSTS = [
+    "ai-job-tracker-7-zn9x.onrender.com",
     "localhost",
-    "127.0.0.1",]
-
+    "127.0.0.1",
+]
 
 # Application definition
 
@@ -68,7 +69,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-     "https://ai-job-tracker-rho-khaki.vercel.app"
+    "https://ai-job-tracker-rho-khaki.vercel.app",
 ]
 
 ROOT_URLCONF = 'config.urls'
