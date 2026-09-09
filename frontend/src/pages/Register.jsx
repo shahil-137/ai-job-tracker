@@ -34,7 +34,7 @@ function Register() {
 
       const response = await fetch(
         // "http://127.0.0.1:8000/api/users/register/"
-        "https://ai-job-tracker-7-zn9x.onrender.com/api",
+        "https://ai-job-tracker-7-zn9x.onrender.com/api/users/register/",
         
         {
           method: "POST",
