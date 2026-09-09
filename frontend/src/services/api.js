@@ -381,3 +381,17 @@ export async function updateApplication(id, applicationData) {
 
   return data;
 }
+export async function getJob(id) {
+  const response = await authFetch(`${API_URL}/jobs/${id}/`, {
+    method: "GET",
+  });
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.detail || "Failed to fetch job");
+  }
+
+  return data;
+}
+
